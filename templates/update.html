@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="blue">
+<form action="./update">
+    Student id:<input type="text" name="t1" value="{{ rec.sid }}"><br>
+    Student name:<input type="text" name="t2" value="{{ rec.sname }}"><br>
+    Student class:<input type="text" name="t3" value="{{ rec.sclass }}"><br>
+    Student sjd:<input type="text" name="t4" value="{{ rec.sjd|date:"Y-m-d"}}"><br>
+
+    Product scd:<input type="text" name="t5" value="{{ rec.scd|date:"Y-m-d" }}"><br>
+<input type="submit" value="update">
+</form>
+</body>
+</html>

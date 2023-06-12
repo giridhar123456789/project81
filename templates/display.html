@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="yellow">
+<table border="2" align="center">
+    <tr><th>sid</th><th>sname</th><th>sclass</th><th>sjd</th><th>scd</th></tr>
+    {% for s in records %}
+        <tr><td>{{ s.sid }}</td>
+    <td>{{ s.sname}}</td>
+        <td>{{ s.sclass }}</td>
+        <td>{{ s.sjd }}</td>
+        <td>{{ s.scd }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

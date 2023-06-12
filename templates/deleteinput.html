@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#00ffff">
+<center>
+<form action="./delete">
+  select student id:  <select name="t1">
+        {% for s in records %}
+            <option value="{{ s.sid }}">{{ s.sid }}</option>
+        {% endfor %}
+    </select><br>
+<input type="submit" value="delete">
+</form>
+</center>
+</body>
+</html>
